@@ -6,43 +6,73 @@
     <title>Document</title>
     <style>
       body {
-        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
         font-family: Arial, Helvetica, sans-serif;
       }
       header {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
       }
       a {
-        margin: 0 40px 0 40px;
         text-decoration: none;
         color: gray;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
       img {
-        margin: 0 5px 0 5px;
         height: 30px;
         width: 30px;
       }
-      li {
-        display: inline-block;
+      ul {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap; 
+        /* перенос элементов на след строку если не влезают */
+        justify-content: space-between;
+        list-style-type: none;
       }
-      .size{
+      li{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .size {
         height: 210px;
         width: 210px;
         border-radius: 50%;
       }
-      textarea{
-        color: darkgray;
-    }
-      button{
+      input {
+        height: 30px;
+        width: 180px;
+      }
+      button {
         margin-top: 30px;
         background-color: black;
         color: white;
-        padding: 5px;
+        padding: 10px;
         border-radius: 5px;
       }
+      .social{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+      }
+      
     </style>
   </head>
   <body>
@@ -57,73 +87,101 @@
         <a href="#">CONTACTS</a>
         <a href="#">ABOUT US</a>
       </nav>
-      <nav>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JI9AGsmMuCFF3fzewsFGBUKvt2R-cwX15A&s"
-          alt="sns"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/019/490/753/non_2x/black-twitter-logo-black-twitter-icon-twitter-symbol-free-free-vector.jpg"
-          alt="sns"
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpnuz9iHMrqAbEwXATNcBGFGb1NhhY72yzkw&s"
-          alt="sns"
-        />
-        <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/018/930/692/small/instagram-logo-instagram-icon-transparent-free-png.png"
-          alt="sns"
-        />
-      </nav>
+      <div class="social">
+        <a href=""
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JI9AGsmMuCFF3fzewsFGBUKvt2R-cwX15A&s"
+            alt="sns"
+        /></a>
+        <a href=""
+          ><img
+            src="https://static.vecteezy.com/system/resources/previews/019/490/753/non_2x/black-twitter-logo-black-twitter-icon-twitter-symbol-free-free-vector.jpg"
+            alt="sns"
+        /></a>
+        <a href=""
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpnuz9iHMrqAbEwXATNcBGFGb1NhhY72yzkw&s"
+            alt="sns"
+        /></a>
+        <a href=""
+          ><img
+            src="https://static.vecteezy.com/system/resources/thumbnails/018/930/692/small/instagram-logo-instagram-icon-transparent-free-png.png"
+            alt="sns"
+        /></a>
+      </div>
     </header>
     <main>
       <section>
-        <br />
-        <br />
-        <br />
         <h1>Бойцовский клуб</h1>
-      </section>
-      <section>
-        <ol>
-           <li>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
-           </li>
-          <li>          
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
+        <ul>
+          <li>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+              alt="box"
+              class="size"
+            />
+            <h2>Участник</h2>
           </li>
           <li>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+              alt="box"
+              class="size"
+            />
+            <h2>Участник</h2>
           </li>
-          <li>         
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
-          </li>
-          <section>
           <li>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+              alt="box"
+              class="size"
+            />
+            <h2>Участник</h2>
           </li>
-          <li>        
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
+          <li>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+              alt="box"
+              class="size"
+            />
+            <h2>Участник</h2>
           </li>
-          <li>         
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
-          </li>
-          <li> 
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s" alt="box" class="size"/>
-          <p><b>Участник</b></p>
-          </li>
-          </section>
-        </ol>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+                alt="box"
+                class="size"
+              />
+              <h2>Участник</h2>
+            </li>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+                alt="box"
+                class="size"
+              />
+              <h2>Участник</h2>
+            </li>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+                alt="box"
+                class="size"
+              />
+              <h2>Участник</h2>
+            </li>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fFf1nhCBf5pdene-ETEucXKAupq6EM4X6w&s"
+                alt="box"
+                class="size"
+              />
+              <h2>Участник</h2>
+            </li>
+        </ul>
+        <input placeholder="email" name="" id="" />
+        <button>Запишись к нам на секцию</button>
       </section>
-      <textarea name="" id="">Email</textarea>
-      <br>
-      <button>Запишись к нам на секцию</button>
     </main>
   </body>
 </html>
